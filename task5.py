@@ -27,7 +27,7 @@ def create_grouped_data(filename, groups_pattern, extra_columns=0, shuffle_rows=
         for line in rows:
             f.write(line + "\n")
 
-  def sample_key_counts(file_path, sample_prob, filter_keys=None):
+def sample_key_counts(file_path, sample_prob, filter_keys=None):
     # выбирает каждую строку с определенной вероятностью sample_prob
     # подсчитывает вхождения ключей
     counts = Counter()
